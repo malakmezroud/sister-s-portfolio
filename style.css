@@ -1,38 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background: #1f2933;
+  padding: 15px 0;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  color: white;
   margin: 0;
 }
 
-.container {
-  max-width: 800px;
-  margin: 40px auto;
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #2563eb, #1e40af);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Sections */
+.section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
   background: white;
-  padding: 40px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
+/* Skills */
+.skills span {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 14px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 32px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-section h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
-}
-
+/* Footer */
 footer {
+  background: #1f2933;
+  color: white;
   text-align: center;
-  color: #777;
-  margin-top: 40px;
+  padding: 20px;
 }
+
+
